@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_INTEC.RegistrationPage"
+             BackgroundColor="White"
+             >
+    <ScrollView>
+        <StackLayout
+            VerticalOptions="Center"
+            Padding="10"
+            >
+            <Image
+                Source="inteclogo.jpg"
+                WidthRequest="150"
+                HeightRequest="150" 
+             />
+            <Entry
+                x:Name="email"
+                Placeholder="Email" 
+             />
+            <Entry 
+                x:Name="name"
+                Placeholder="Name" 
+             />
+            <Entry 
+                x:Name="password"
+                Placeholder="Password" 
+                IsPassword="True"
+             />
+            <Entry 
+                x:Name="passwordConfirm"
+                Placeholder="Confirm Password" 
+                IsPassword="True" 
+             />
+
+            <Button 
+                Text="Register" 
+                TextColor="White"  
+                BackgroundColor="Red" 
+                Clicked="ButtonClicked"
+             />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

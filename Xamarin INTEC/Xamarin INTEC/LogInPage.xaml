@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_INTEC.LogInPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <StackLayout 
+            VerticalOptions="Center" 
+            Padding="10"
+            >
+            <Image 
+                Source="inteclogo.jpg" 
+                WidthRequest="150"
+                HeightRequest="150"
+             />
+            <Entry 
+                x:Name="emailEntry"
+                Placeholder="Email" 
+             />
+            <Entry 
+                x:Name="passwordEntry"
+                Placeholder="Password" 
+                IsPassword="True"
+             />
+            <Button 
+                Text="Login" 
+                TextColor="White"  
+                BackgroundColor="Red" 
+                Clicked="ButtonClicked1" 
+             />
+            <Button
+                Text="Register"
+                TextColor="White"
+                BackgroundColor="Red"
+                Clicked="ButtonClicked"
+                />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

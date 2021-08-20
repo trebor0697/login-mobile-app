@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_INTEC.HomePage"
+             xmlns:pages="clr-namespace:Xamarin_INTEC"
+                 >
+    <MasterDetailPage.Master >
+        <ContentPage BackgroundColor="Gray" Title="Menu">
+            <StackLayout VerticalOptions="Center" Padding="8" >
+                <Button Text="Home" TextColor="White" BackgroundColor="Red"/>
+                <Button Text="Option 1" TextColor="White" BackgroundColor="Red"/>
+                <Button Text="Option 2" TextColor="White" BackgroundColor="Red"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+
+        <NavigationPage >
+            <x:Arguments>
+                <ContentPage BackgroundColor="White">
+                       <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,3*,*,*,*,*,2*,2*,2*" Padding="30">
+                            <Label Grid.Row="0" Grid.Column ="0" Text="FEATURED COURSE"/>
+                            <Label Grid.Row="1" Grid.ColumnSpan="2" Text="Stress will always be around. The trick is finding a few stress-busters you can enjoy!"/>
+                            <Image Source="woman.jpg" Grid.Row="2" Grid.ColumnSpan="2"/>
+                            <Label Grid.Row="3" Grid.ColumnSpan="2" Text="Foundations" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Black"/>
+                            <Label Grid.Row="4" Grid.ColumnSpan="2" Text="This guided meditation for beginners course will introduce you to mindfulness" HorizontalTextAlignment="Center"/>
+                            <Label Grid.Row="5" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" Text="10 min"/>
+                            <Label Grid.Row="6" Text="ON THE GO"/>
+                            <Button Grid.Row="7" Grid.Column="0" BackgroundColor="LightGoldenrodYellow" Text="After Work"/>
+                            <Button Grid.Row="8" Grid.Column="0" BackgroundColor="Goldenrod" Text="Good morning"/>
+                            <Button Grid.Row="9" Grid.Column="0" BackgroundColor="Turquoise" Text="Quick break"/>
+                            <Button Grid.Row="7" Grid.Column="1" BackgroundColor="LightSeaGreen" Text="Tough day"/>
+                            <Button Grid.Row="8" Grid.Column="1" BackgroundColor="LightGray" Text="Sleep"/>
+                            <Button Grid.Row="9" Grid.Column="1" BackgroundColor="Salmon" Text="Big event"/>
+                        </Grid>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
